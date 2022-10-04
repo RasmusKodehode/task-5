@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Please fill out the following questions:</h1>
+        <form>
+            <fieldset id="personalia">
+                <legend>Personal info:</legend>
+                <label for="first-name">First name:</label>
+                <input type="text" placeholder="first name" required>
+                <br>
+                <label for="last-name">Last name:</label>
+                <input type="text" placeholder="last name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="input@email.com" required>
+                <br>
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+                <br>
+                <label for="login">Log in to your account:</label><br>
+                <input type="text" placeholder="username">
+                <input type="password" placeholder="password" name="password" id="password">
+                <br><input type="button" value="Log in">
+
+            </fieldset>
+            <br>
+            <fieldset id="championship">
+                <legend>Start Your Journey:</legend>
+                <h4>Pick the places you will visit:</h4>
+                <label for="track1">Suzuka, Japan</label>
+                <input type="checkbox" name="track" id="track1" value="suzuka">
+                <br>
+                <label for="track2">Fuji, Japan</label>
+                <input type="checkbox" name="track" id="track2" value="fuji">
+                <br>
+                <label for="track3">Sebring, Florida</label>
+                <input type="checkbox" name="track" id="track3" value="sebring">
+                <br>
+                <label for="track4">Circuit de la Sarthe, France</label>
+                <input type="checkbox" name="track" id="track4" value="LeMans">
+                <br>
+                <label for="track5">Mount Panorama, Australia</label>
+                <input type="checkbox" name="track" id="track5" value="bathurst">
+                <br>
+                <label for="track6">Nurburgring, Germany</label>
+                <input type="checkbox" name="track" id="track6" value="nurburgring">
+                <br>
+                <label for="track7">Spa-Franchorchamps, Belgium</label>
+                <input type="checkbox" name="track" id="track7" value="spa">
+                <br><br>
+                <label for="fav-racecar">Input your car:</label>
+                <input list="racecars" name="fav-racecar" id="fav-racecar">
+                <datalist id="racecars">
+                    <option value="Audi R8"></option>
+                    <option value="Audi R10 TDI"></option>
+                    <option value="Audi R15 TDI Plus"></option>
+                    <option value="Audi R18 E-Tron Quattro"></option>
+                    <option value="BMW V12 LMR"></option>
+                    <option value="BMW M Hybrid V8"></option>
+                    <option value="Mercedes-Benz CLR"></option>
+                    <option value="Toyota GT-One"></option>
+                    <option value="Toyota TS050 Hybrid"></option>
+                    <option value="Panoz LMP07"></option>
+                    <option value="Bentley Speed 8"></option>
+                    <option value="Nissan R391"></option>
+                    <option value="Nissan GT-R LM Nismo"></option>
+                    <option value="Cadillac Northstar LMP02"></option>
+                    <option value="Porsche 919 Hybrid"></option>
+                    <option value="Porsche 963"></option>
+                    <option value="Peugot 908"></option>
+                    <option value="Acura ARX-06"></option>
+                </datalist>
+                <br>
+                <label for="fav-colour">Pick the color of your car:</label>
+                <input type="color" name="fav-colour" id="fav-colour">
+                <br>
+                <h4>Pick the length of the journey:</h4>
+                <label for="24">24 Hours</label>
+                <input type="radio" name="length" id="24" value="24">
+                <br>
+                <label for="12">12 Hours</label>
+                <input type="radio" name="length" id="12" value="12">
+                <br>
+                <label for="245">2 Hours 45 minutes</label>
+                <input type="radio" name="length" id="245" value="245">
+                <br>
+                <label for="GP">305 km</label>
+                <input type="radio" name="length" id="GP" value="GP">
+                <br>
+                <label for="1000k">1000 km</label>
+                <input type="radio" name="length" id="1000k" value="1000k">
+                <br><br>
+                <label for="weather">Select weather conditions:</label>
+                <select name="weather" id="weather">
+                    <option value="choose" selected disabled>--Choose weather--</option>
+                    <option value="sunny">Sunny</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="Rainy">Rainy</option>
+                    <option value="foggy">Foggy</option>
+                </select>
+                <br>
+                <label for="grid">How many people are you going with?</label>
+                <input type="number" name="grid" id="grid" placeholder="Number of cars" min="0">
+                <br><br>
+                <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Any more details you want to mention?"></textarea>
+                <br><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
